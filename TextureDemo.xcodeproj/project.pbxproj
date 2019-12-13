@@ -17,6 +17,10 @@
 		343C85C923471C2B008E96F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343C85C823471C2B008E96F0 /* Assets.xcassets */; };
 		343C85CC23471C2B008E96F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343C85CA23471C2B008E96F0 /* LaunchScreen.storyboard */; };
 		343C85D723471C2B008E96F0 /* TextureDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C85D623471C2B008E96F0 /* TextureDemoTests.swift */; };
+		34EF20A423A352EE00FC9323 /* ASKGram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EF20A323A352EE00FC9323 /* ASKGram.swift */; };
+		34EF20A723A353F700FC9323 /* StoryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EF20A623A353F700FC9323 /* StoryNode.swift */; };
+		34EF20A923A355FE00FC9323 /* FeedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EF20A823A355FE00FC9323 /* FeedNode.swift */; };
+		34EF20AC23A3692800FC9323 /* ASKGramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EF20AB23A3692800FC9323 /* ASKGramModel.swift */; };
 		4D74DDDC1E13BFE7141685EA /* Pods_TextureDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E40679CCAB94C02F02EC6E /* Pods_TextureDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +48,10 @@
 		343C85D223471C2B008E96F0 /* TextureDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextureDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		343C85D623471C2B008E96F0 /* TextureDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureDemoTests.swift; sourceTree = "<group>"; };
 		343C85D823471C2B008E96F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34EF20A323A352EE00FC9323 /* ASKGram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASKGram.swift; sourceTree = "<group>"; };
+		34EF20A623A353F700FC9323 /* StoryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryNode.swift; sourceTree = "<group>"; };
+		34EF20A823A355FE00FC9323 /* FeedNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedNode.swift; sourceTree = "<group>"; };
+		34EF20AB23A3692800FC9323 /* ASKGramModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASKGramModel.swift; sourceTree = "<group>"; };
 		524A133BD909BA991271061F /* Pods-TextureDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextureDemoTests/Pods-TextureDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		731F26BC66961A54AB6F8149 /* Pods-TextureDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextureDemo/Pods-TextureDemo.release.xcconfig"; sourceTree = "<group>"; };
 		78277AF76E8EE117157F3E23 /* Pods-TextureDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextureDemo/Pods-TextureDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +133,7 @@
 		343C85C023471C2A008E96F0 /* TextureDemo */ = {
 			isa = PBXGroup;
 			children = (
+				34EF20A223A3529A00FC9323 /* ASKGram */,
 				3425D19823545ED800C49CB0 /* Boilerplate */,
 				343C85C323471C2A008E96F0 /* ViewController.swift */,
 				3425D19723545EBE00C49CB0 /* Nodes */,
@@ -140,6 +149,33 @@
 				343C85D823471C2B008E96F0 /* Info.plist */,
 			);
 			path = TextureDemoTests;
+			sourceTree = "<group>";
+		};
+		34EF20A223A3529A00FC9323 /* ASKGram */ = {
+			isa = PBXGroup;
+			children = (
+				34EF20AA23A3692000FC9323 /* Model */,
+				34EF20A523A353E900FC9323 /* SubNodes */,
+				34EF20A323A352EE00FC9323 /* ASKGram.swift */,
+			);
+			path = ASKGram;
+			sourceTree = "<group>";
+		};
+		34EF20A523A353E900FC9323 /* SubNodes */ = {
+			isa = PBXGroup;
+			children = (
+				34EF20A623A353F700FC9323 /* StoryNode.swift */,
+				34EF20A823A355FE00FC9323 /* FeedNode.swift */,
+			);
+			path = SubNodes;
+			sourceTree = "<group>";
+		};
+		34EF20AA23A3692000FC9323 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34EF20AB23A3692800FC9323 /* ASKGramModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		AFBB9FB071CE679626CA726A /* Pods */ = {
@@ -331,8 +367,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34EF20A423A352EE00FC9323 /* ASKGram.swift in Sources */,
+				34EF20A723A353F700FC9323 /* StoryNode.swift in Sources */,
 				343C85C423471C2A008E96F0 /* ViewController.swift in Sources */,
 				3425D19423543AE800C49CB0 /* CollectionNode.swift in Sources */,
+				34EF20A923A355FE00FC9323 /* FeedNode.swift in Sources */,
+				34EF20AC23A3692800FC9323 /* ASKGramModel.swift in Sources */,
 				3425D19623545DF400C49CB0 /* Movie.swift in Sources */,
 				34100F41234B307B00E83C18 /* TableNode.swift in Sources */,
 				343C85C223471C2A008E96F0 /* AppDelegate.swift in Sources */,
